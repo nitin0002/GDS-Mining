@@ -25,7 +25,8 @@
  h2 {
    font-size: 38px;
  }
- 
+
+
  h3 {
    font-size: 30px;
  }
@@ -176,6 +177,17 @@
    left: 0;
    z-index: 999999;
    background: #000;
+ }
+ 
+ .header-section{
+  background-image: url("/img/gds-header.jpeg");
+  background-repeat: no-repeat;
+
+  padding: 0px 0px;
+  margin-bottom: 6px;
+  background-size: cover;
+  height: 120px;
+  
  }
  
  .loader {
@@ -422,31 +434,35 @@
  
  .site-logo {
    display: inline-block;
-   margin-right: 100px;
-   padding-left: 63px;
-   width: 300px;
-   height: 100px;
- }
- .l{
-  width: 300px;
+   width: 200px;
   height: 100px;
+   margin-left: 130px;
+   margin-right: 100px;
+   
+   
+   
  }
- 
+ /* .l{
+  width: 100px;
+  height: 10px;
+ }
+  */
  .header-right {
    float: right;
-   padding-right: 83px;
+   padding-right: 23px;
    position: relative;
  }
  
  .header-info-box {
    display: inline-block;
-   margin-right: 40px;
-   padding: 21px 0 15px;
+  margin-right: -10px;
+   padding: 36px 0 15px;
  }
  
  .header-info-box .hib-icon {
    float: left;
    margin-right: 13px;
+   margin-left: 23px;
  }
  
  .header-info-box .hib-text {
@@ -456,10 +472,12 @@
  .header-info-box .hib-text h6 {
    font-weight: 400;
    font-size: 14px;
+   color: white;
  }
  
  .header-info-box .hib-text p {
    margin-bottom: 0;
+   color: rgb(221, 221, 221);
  }
  
  .search-switch {
@@ -491,10 +509,13 @@
    display: -webkit-inline-box;
    display: -ms-inline-flexbox;
    display: inline-flex;
+
  }
  
  .site-nav-menu ul {
    list-style: none;
+   align-self: center;
+  
  }
  
  .site-nav-menu ul li {
@@ -508,7 +529,7 @@
    margin-right: 35px;
    font-size: 20px;
    font-weight: 600;
-   color: #081624;
+   color: #e0e2e4;
    position: relative;
  }
  
@@ -1270,7 +1291,7 @@
  
  .site-logo img{
   margin-bottom: 20px;
-  width: 300px;
+  width: 200px;
   height: 100px;
  }
 
@@ -1816,12 +1837,12 @@
  }
  
  @media only screen and (min-width: 1200px) and (max-width: 1595px) {
-   .site-logo {
+   /* .site-logo {
      margin-right: 20px;
      padding-left: 15px;
-   }
+   } */
    .header-right {
-     padding-right: 60px;
+     padding-right: 20px;
    }
    .header-info-box {
      margin-right: 0;
@@ -1840,6 +1861,8 @@
  @media only screen and (min-width: 992px) and (max-width: 1199px) {
    .site-navbar {
      text-align: center;
+     width:100%;
+     
    }
    .site-logo {
      display: block;
@@ -1850,7 +1873,7 @@
      text-align: center;
    }
    .header-right {
-     padding-right: 50px;
+     padding-right: 20px;
      text-align: center;
      display: inline-block;
      float: none;
@@ -1894,7 +1917,7 @@
      text-align: center;
    }
    .header-right {
-     padding-right: 50px;
+     padding-right: 20px;
      text-align: center;
      display: inline-block;
      float: none;
@@ -1974,6 +1997,8 @@
      line-height: 1.5;
    }
    .site-navbar {
+    display: flex;
+    flex-direction: column;
      text-align: center;
    }
    .site-logo {
@@ -1989,10 +2014,11 @@
    }
    .header-info-box {
      margin-right: 15px;
-     padding: 21px 0 0;
+     padding: 21px 0 20px;
    }
    .header-info-box .hib-text {
      text-align: left;
+     margin-right: 20px;
    }
    .site-nav-menu {
      display: none;
