@@ -3,7 +3,7 @@ body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -2150,3 +2150,35 @@ ol {
     padding: 13px 10px;
   }
 }
+
+.about-text .title{
+  position: relative;
+  color: #d7a449;
+  font-size: 35px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.about-text .title:before {
+  position: absolute;
+  content: '';
+  right: 0px;
+  bottom: 7px;
+  width: 40px;
+  height: 2px;
+  background-color: #bbbbbb;
+}
+
+.about-text .about-title-method{
+  font-size: 40px;
+  font-weight: 600;
+}
+.about-text .method-para{
+  font-size: 17px;
+  color: #272727;
+}
+
+
+
