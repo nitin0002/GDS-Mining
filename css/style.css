@@ -996,14 +996,43 @@ ol {
 .footer-section {
   background: #17172d;
   padding-bottom: 0;
+  
+  
+}
+.spad {
+  padding-top: 50px;
+}
+
+.footer-section .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-widget {
   margin-bottom: 40px;
+  
+}
+a[href^="tel"], a[href^="mailto"] {
+  color: #f3f9ff;
+}
+
+a[href^="tel"]:hover, a[href^="mailto"]:hover {
+  color: #cae2fc;
+  text-decoration: none;
 }
 
 .footer-widget.about-widget {
   padding-right: 15px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .footer-widget.about-widget img {
@@ -1061,6 +1090,11 @@ ol {
   background: transparent;
 }
 
+.footer-social {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer-social a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1088,6 +1122,7 @@ ol {
 
 .footer-info-box {
   margin-bottom: 30px;
+  
 }
 
 .footer-info-box .fib-icon {
@@ -1102,6 +1137,8 @@ ol {
 
 .footer-info-box .fib-text p {
   margin-bottom: 0;
+  color: #f3f9ff;
+  
 }
 
 .footer-buttom {
@@ -1129,6 +1166,11 @@ ol {
   text-align: right;
 }
 
+ul.footer-menu{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 180px;
+}
 .footer-menu li {
   display: inline-block;
 }
@@ -1176,14 +1218,17 @@ ol {
 }
 
 .page-top-section h2 {
-  font-weight: 300;
+  font-weight: 450;
   color: #fff;
   margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 65px;
 }
 
 .page-top-section p {
-  color: #fff;
+  color: #e0e0e0;
   margin-bottom: 35px;
+  font-size: 20px;
 }
 
 /* ---------------
@@ -1367,6 +1412,10 @@ ol {
 
 .team-member:hover:after {
   opacity: 0;
+}
+
+.heading {
+  background-color: #f1f1f1;
 }
 
 /* -----------------
@@ -2181,4 +2230,23 @@ ol {
 }
 
 
-
+.page-top-section .btn-style-three:hover {
+  color: #ffffff;
+  background: #ffffff;
+  color:#000
+}
+.page-top-section .btn-style-three {
+  position: relative;
+  line-height: 24px;
+  color: #252525;
+  font-size: 15px;
+  font-weight: 700;
+  background: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #d7a449;
+  text-transform: capitalize;
+  border: 2px solid #d7a449;
+  border-radius: 10px;
+  font-family: 'Arimo', sans-serif;
+}
