@@ -2250,3 +2250,17 @@ ul.footer-menu{
   border-radius: 10px;
   font-family: 'Arimo', sans-serif;
 }
+.main-graph{
+  height: 95%;
+margin-bottom: 60px;
+}
+.graph{
+  padding: 10px 180px ;
+  
+}
+
+.clearfix2{
+  display: flex;
+  align-items: center;
+}
+

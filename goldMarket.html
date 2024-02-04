@@ -119,7 +119,7 @@
 
     <section class="about-section">
       <div class="container">
-        <div class="row clearfix">
+        <div class="row clearfix clearfix2">
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
             <div>
@@ -216,70 +216,69 @@
                 <h2>GLOBAL PRICE OF GOLD</h2>
               </div>
             </div>
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-              <div class="tradingview-widget-container__widget"></div>
-              <div class="tradingview-widget-copyright">
-                <a
-                  href="https://www.tradingview.com/"
-                  rel="noopener nofollow"
-                  target="_blank"
-                  ><span class="blue-text"
-                    >Track all markets on TradingView</span
-                  ></a
-                >
-              </div>
-              <script
-                type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
-                async
-              >
-                var option={
-                "symbols": [
-                  [
-                	"TVC:GOLD|120M"
-                  ]
-                ],
-                "chartOnly": false,
-                "width": "100%",
-                "height": "100%",
-                "locale": "en",
-                "colorTheme": "light",
-                "autosize": true,
-                "showVolume": true,
-                "showMA": false,
-                "hideDateRanges": false,
-                "hideMarketStatus": false,
-                "hideSymbolLogo": false,
-                "scalePosition": "right",
-                "scaleMode": "Normal",
-                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-                "fontSize": "10",
-                "noTimeScale": false,
-                "valuesTracking": "2",
-                "changeMode": "price-and-percent",
-                "chartType": "line",
-                "gridLineColor": "rgba(255, 255, 255, 0.05)",
-                "backgroundColor": "rgba(255, 255, 255, 1)",
-                "lineWidth": 3,
-                "lineType": 0,
-                "dateRanges": [
-                  "120m|12M"
-                ],
-                "downColor": "#f7525f",
-                "upColor": "#22ab94",
-                "borderUpColor": "#22ab94",
-                "borderDownColor": "#f7525f",
-                "wickUpColor": "#22ab94",
-                "wickDownColor": "#f7525f"
-                 }
-              </script>
-            </div>
-            <!-- TradingView Widget END -->
+           
           </div>
+          
         </div>
       </div>
     </section>
+
+<div class="main-graph">
+ <!-- TradingView Widget BEGIN -->
+ <div class="tradingview-widget-container graph">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright">
+    <a
+      href="https://www.tradingview.com/"
+      rel="noopener nofollow"
+      target="_blank"
+      ><span class="blue-text"
+        >Track all markets on TradingView</span
+      ></a
+    >
+  </div>
+  <script
+    type="text/javascript"
+    src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+    async
+  >
+      {
+  "symbols": [
+    [
+      "TVC:GOLD|120M"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "100%",
+  "locale": "en",
+  "colorTheme": "light",
+  "autosize": false,
+  "showVolume": true,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "2",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "120m|1M"
+  ],
+  "downColor": "#f7525f",
+  "upColor": "#22ab94"
+}
+  </script>
+</div>
+</div>
+<!-- TradingView Widget END -->
 
     <!-- Footer section -->
     <footer class="footer-section spad">
