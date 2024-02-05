@@ -46,7 +46,6 @@ body {
 .heading span {
 	display: block;
 }
-
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -55,8 +54,10 @@ body {
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
+	/* Set the flex-basis to 0 to allow flex-grow to determine the size */
+	flex: 1 0 0;
+	/* Minimum width of 16rem and grow to fit available space */
+	min-width: calc(33.333% - 2rem);
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -69,6 +70,11 @@ body {
 	height: 100%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
+}
+
+img {
+    max-width: 100%; /* Change this line */
+    max-height: 200px;
 }
 
 .gallery-image:hover {
@@ -86,12 +92,25 @@ Remove or comment-out the code block below to see how the browser will fall-back
 @supports (display: grid) {
 	.gallery {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
 		grid-gap: 2rem;
+		align-items: start;
 	}
 
 	.gallery,
 	.gallery-item {
 		margin: 0;
+		
 	}
 }
+
+.gallery-heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
