@@ -70,12 +70,12 @@ body {
 	height: 100%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
-}
-
-img {
-    max-width: 100%; /* Change this line */
+	max-width: 100%; /* Change this line */
     max-height: 200px;
 }
+
+
+
 
 .gallery-image:hover {
 	transform: scale(1.15);
